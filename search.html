@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content">
+        <header class="page-header">
+            <figure>
+                <img src="./img/reci-find.jpg" alt="Recifind Logo" class="logo">
+            </figure>
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./search.html" class="active">Search</a>
+                <a href="./aboutUs.html">About Us</a>
+                <a href="./contactUs.html">Contact</a>
+            </nav>
+        </header>
+        <hr class="big">
+        <main>
+            <div class="search-info">
+                <p class="message">Welcome to our Recipe Browser!</p>
+                <p>
+                    Our application simplifies the search for delectable recipes. You can start by searching for recipes
+                    based on a specific ingredient. We'll provide you with 12 random recipes that feature that
+                    ingredient. Each recipe is neatly displayed in a card format, offering the dish's name, a
+                    mouthwatering photo, a list of necessary ingredients, and health labels.
+                </p>
+                <p>
+                    Furthermore, you can access the
+                    full recipe details in a new browser window with the "Step by Step" button or save your favorites
+                    using the "Add Favorites" button. If you change your mind, you can easily remove recipes from
+                    your favorites. It's a convenient way to discover and organize your favorite dishes.
+                </p>
+                <p class="message">Happy cooking!</p>
+            </div>
+            <div id="search" class="search">
+                <input type="text" name="ingredient" id="ingredient" placeholder="Write an ingredient down">
+                <button id="btn">Search</button>
+            </div>
+            <div id="results" class="results">
+
+            </div>
+            <h2 class="favTitle">Your favorites</h2>
+            <div id="favorites">
+            </div>
+        </main>
+        <hr class="big">
+        <footer>
+            <div class="footerMainInfo">
+                <div class="company">
+                    <h4>Company</h4>
+                    <a href="./aboutUs.html">About us</a>
+                </div>
+                <div class="info">
+                    <h4>Information</h4>
+                    <a href="#faq">FAQ</a>
+                    <a href="./contactUs.html">Contact</a>
+                </div>
+                <div class="social-media">
+                    <h4>Social Media</h4>
+                    <a href="https://www.instagram.com">Instagram</a>
+                    <a href="https://www.twitter.com">Twitter</a>
+                    <a href="https://www.telegram.com">Telegram</a>
+                </div>
+            </div>
+            <!-- <a href="#">Back to Top</a> -->
+            <!-- <a href="#">Back to Top <label for="back-top" class="top-label"></label> </a> -->
+            <p class="copy">&copy; Recifind 2023</p>
+            <a class="backTop" href="#">Back to Top <i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

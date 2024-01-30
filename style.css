@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: rgba(180, 180, 180, .2);
+}
+.content {
+    margin: 15px auto;
+    width: 75%;
+}
+.big {
+    border: 2px solid #ccc;
+}
+.small {
+    border: 1px solid #ccc;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* ------------------- MENU NAV ------------------- */
+header {
+    margin: 15px 0;
+}
+.logo {
+    display: block;
+    margin: 10px auto;
+
+    width: 80%;
+    min-width: 200px;
+    max-width: 350px;
+}
+header nav {
+    /* width: 50%; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+nav > a {
+    margin: 5px 10px;
+    padding: 5px 10px;
+    font-weight: 500;
+
+    border-radius: 1px solid #000;
+}
+nav a.active {
+    color: #009578;
+    font-weight: 600;
+}
+nav > a:hover {
+    background: #009578;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* ----------------- INFORMATION ----------------- */
+main .information {
+    margin: 20px 0;
+}
+
+main .information header h2 {
+    text-align: center;
+}
+
+main .information h3 {
+    text-align: center;
+}
+
+/* ------------------- GENERAL ------------------- */
+.general-text .text {
+    margin-bottom: 15px;
+}
+.general-text .text p {
+    margin: 10px 0;
+}
+.fruits-and-vegetables {
+    display:none;
+}
+.grandma-cooking {
+    display: block;
+    margin: 10px auto;
+
+    width: 100%;
+    max-width: 600px;
+}
+
+/* ------------------- FEATURES ------------------ */
+main .features {
+    margin: 20px 0;
+}
+.f-one, .f-two,
+.f-three, .f-four {
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px 0;
+    text-align: center;
+}
+.features p {
+    font-size: 12px;
+    padding: 5px 20px;
+}
+
+/* ---------------- USES CASES ----------------- */
+main .uses-cases {
+    margin: 20px 0;
+}
+.uses-cases-content {
+    background: #fff;
+    padding: 15px 0;
+}
+.uses-cases-content ol {
+    margin-left: 15px;
+}
+.uses-cases-content ol li {
+    margin: 15px 10px;
+}
+
+li::marker {
+    color: red;
+    font-weight: 500;
+}
+
+/* ---------------- FAQ & Accordion -------------- */
+.faq {
+    margin: 40px 0;
+}
+.faq header {
+    text-align: center;
+}
+.faq-accordion {
+    margin: 15px 0;
+    width: 100%;
+    /* Optional */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+
+    background: #009578;
+}
+.accordion--label,
+.accordion--content {
+    padding: 14px 20px;
+}
+.accordion--label {
+    display: block;
+    /* display: flex;
+    justify-content: space-between; */
+
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    /*Revisar*/
+    transition: background 0.1s;
+    /*Revisar*/
+}
+.accordion--label:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------ The arrow ------------------ */
+.accordion--label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    /* height half of width */
+    width: 12px;
+    height: 6px;
+
+    /* The Arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+    background-size: contain;
+    transition: transform 0.4s;
+}
+.accordion--content {
+    background: #fff;
+    /* color: #000; */
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+}
+.accordion--input {
+    display: none;
+}
+.accordion--input:checked~.accordion--content {
+    display: block;
+}
+.accordion--input:checked~.accordion--label::after {
+    transform: translateY(-50%) rotate(0.5turn);
+}
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+
+/* --------------------FOOTER ------------------- */
+footer {
+    margin: 40px 0;
+    text-align: center;
+}
+footer .company,
+footer .info,
+footer .social-media {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+footer .top-label::after {
+    content: "a";
+}
+footer .copy {
+    margin: 10px 0;
+    padding: 10px 5px;
+    position: relative;
+    top: 25px;
+}
+footer .backTop {
+    padding: 5px 10px;
+    border-radius: 10px;
+
+    font-size: 10px;
+    position: relative;
+    top: 19px;
+}
+.backTop:hover {
+    color: #fff;
+    background: #009578;
+}
+/* ---------------------------------------------- */
+
+
+/* ------------- CONTACT US (FORM) -------------- */
+.contact-us, .about-us {
+    margin: 15px 0;
+    text-align: center;
+}
+.form p {
+    margin: 0 10px 20px 10px;
+}
+form label {
+    margin: 0 10px 20px 10px;
+}
+fieldset {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid green;
+    border-radius: 10px;
+    /* width:  100%; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+fieldset p {
+    margin: 3px 5px;
+}
+fieldset p input {
+    width: 100%;
+    padding: 5px;
+}
+fieldset .telephone-p {
+    display: flex;
+}
+fieldset textarea {
+    margin: 13px 5px;
+    /* margin: 0 10px 20px 10px; */
+    margin: 5px;
+}
+/* ---------------------------------------------- */
+
+/* ----------- SEARCH (info + input) ------------ */
+.search-info, .search, 
+.results {
+    margin: 20px 0;
+}
+.search {
+    padding: 10px;
+    display: flex;
+    border: 1px solid green;
+    border-radius: 10px;
+}
+.search input {
+    margin-right: 5px;
+    width: 80%;
+    padding: 5px;
+}
+.search button {
+    margin-left: 5px;
+    width: 20%;
+    padding: 5px;
+    background: green;
+    color: #fff;
+}
+.search-info .message {
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* -------------------- CARD -------------------- */
+.card {
+    margin: 10px 5px;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 10px;
+}
+.card h3 {
+    margin: 10px 0;
+    /* text-align: center; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+.card ul {
+    margin: 15px 0;
+    /* list-style: <list-style-type> || <list-style-position> || <list-style-image>; */
+    list-style: none;
+}
+.card ul li::before {
+    content: "🔸 ";
+}
+.card img {
+    width: 100%;
+}
+.card div {
+    margin: 15px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.card div button {
+    margin: 15px;
+    padding: 5px 10px;
+    background: rgba(255,0,0,.8);
+    color: #fff;
+    border-radius: 100%;
+}
+.card div a {
+    text-align: center;
+    font-weight: 600;
+}
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+/* --------------- ABOUT US ------------------ */
+.about-us-content .text {
+    margin: 15px 0;
+}
+.about-us-content .text p {
+    margin: 15px 0;
+}
+.about-us-content figure {
+    margin: 25px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.about-us-content figure img {
+    /* margin: 25px;
+    padding: 10px; */
+    width: 100%;
+}
+
+
+
+@media (min-width: 650px) {
+    /* ----------------- MENU NAV ----------------- */
+    header nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    /* ------------------- FAQ ------------------- */
+    .faq {
+        margin-top: 25px;
+    }
+    /* ----------------- FEATURES ----------------- */
+    .features-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .f-one, .f-two {
+        margin: 15px 10px;
+        padding: 15px 5px;
+        width: 100%;
+        max-width: 45%;
+    }
+    /* ----------------- USES CASES ----------------- */
+    .uses-cases-content ol {
+        margin-left: 25px;
+    }
+    /* ------------------- FOOTER ------------------- */
+    .footerMainInfo {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    /* -------------------- CARD -------------------- */
+    .results {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .card {
+        font-size: 14px;
+        width:100%;
+        max-width: 45%;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    /* ------------------ MENU NAV ------------------ */
+    .page-header {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* ------------------ FEATURES ------------------ */
+    .features-content {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 25px;
+    }
+    .features header {
+        margin-top: 30px;
+    }
+    .f-one, .f-two {
+        margin: 15px 10px;
+        padding: 15px 5px;
+        width: 100%;
+        max-width: 40%;
+    }
+    /* ------------------ GENERAL ------------------ */
+    .general {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 35px 0;
+    }
+    .general-text .text {
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 10cm;
+    }
+    .grandma-cooking {          /* Change this imgae... */
+        display: none;
+    }
+    .fruits-and-vegetables {    /* for this one. */
+        display: block;
+    }
+    .general .initial-photo {
+        width: 275px;
+        margin: 45px 0 0 0;
+    }
+    .general-text {
+        text-size-adjust: auto;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 17px;
+        margin: 0 20px;
+    }
+    /* ------------------ USES CASES ------------------ */
+    .uses-cases header {
+        margin: 30px
+    }
+    /* -------------------- FOOTER -------------------- */
+    footer .backTop {
+        position: relative;
+        top: 18px;
+    }
+    footer .copy {
+        margin: 20px;
+        position: relative;
+        top: 20px;
+    }
+    /* --------------------- CARDS --------------------- */
+    .results {
+        justify-content: space-between;
+    }
+    .card {
+        font-size: 16px;
+        width:100%;
+        max-width: 30%;
+    }
+
+}
+
+/* PC */
+
+/* @media (min-width: 1440px) {
+    main .general figure .-initialphoto {
+        left: -44px;
+        width: 125%;
+        top: -67px;
+        position: relative;
+    }
+
+    .general-text .text {
+        width: 16cm;
+    }
+
+} */
